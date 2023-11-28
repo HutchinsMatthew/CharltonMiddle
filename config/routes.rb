@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
+  resources :teachers do
+    collection do
+        get 'add_students_to_teachers'
+    end
+  end
+  resources :students
   resources :events
   resources :clubs
+  
 
   get 'site/index'
   get 'site/show_users'

@@ -1,0 +1,13 @@
+<%= form_with url: "/teachers/add_students_to_teachers", method: :get do |form| %>
+  <div>
+    <%= form.label :teacher_id, "Teacher" %>
+    <%= form.select :teacher_id, options_from_collection_for_select(@teachers, 'id', 'name')%>
+  </div>
+  <div>
+    <%= form.label :student_id, "Students" %>
+    <%= form.select :student_id, options_from_collection_for_select(@students, 'id', 'name')%>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
