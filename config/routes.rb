@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'site/index'
   get 'site/show_users'
-
+ 
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',

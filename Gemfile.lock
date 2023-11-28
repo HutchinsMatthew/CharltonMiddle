@@ -236,6 +236,7 @@ DEPENDENCIES
   jsbundling-rails
   puma (~> 5.0)
   rails (~> 7.0.8)
+  railties (~> 7.0.8)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

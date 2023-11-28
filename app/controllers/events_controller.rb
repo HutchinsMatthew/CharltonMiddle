@@ -12,11 +12,13 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @event = Event.new
+    @event = Event.new 
+    @clubs=Club.all
   end
 
   # GET /events/1/edit
-  def edit
+  def edit 
+    @clubs=Club.all
   end
 
   # POST /events or /events.json
@@ -65,6 +67,6 @@ class EventsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def event_params
-      params.fetch(:event, {})
+      params.require(:event).permit(:title, :club_id)
     end
 end

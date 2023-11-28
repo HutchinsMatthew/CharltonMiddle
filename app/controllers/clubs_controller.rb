@@ -7,7 +7,8 @@ class ClubsController < ApplicationController
   end
 
   # GET /clubs/1 or /clubs/1.json
-  def show
+  def show 
+    
   end
 
   # GET /clubs/new
@@ -55,7 +56,9 @@ class ClubsController < ApplicationController
       format.html { redirect_to clubs_url, notice: "Club was successfully destroyed." }
       format.json { head :no_content }
     end
-  end
+  end 
+
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -65,6 +68,6 @@ class ClubsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def club_params
-      params.fetch(:club, {})
-    end
+        params.require(:club).permit(:title)
+      end
 end
