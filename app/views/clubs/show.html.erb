@@ -1,6 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @club %>
+<%= render @club %> 
+
+    <strong>Events:</strong>
+    <%@club.events.each do |e| %> 
+       <p> <%= e.title %> 
+        <%= link_to "Show this event", e %>
+       </p> 
+
+    <% end %>
+  
 
 <div>
   <%= link_to "Edit this club", edit_club_path(@club) %> |

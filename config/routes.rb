@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
+
   get 'rooms/index'
+
+  resources :teachers do
+    collection do
+        get 'add_students_to_teachers'
+    end
+  end
+  resources :students
+
   resources :events
   resources :clubs
+  
 
   resources :rooms do
     resources :messages
@@ -9,7 +19,7 @@ Rails.application.routes.draw do
 
   get 'site/index'
   get 'site/show_users'
-
+ 
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords',

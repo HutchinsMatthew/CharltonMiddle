@@ -3,9 +3,9 @@
 one:
   name: MyString
   grade: 1
-  gpa: 9.99
+  year: 1
 
 two:
   name: MyString
   grade: 1
-  gpa: 9.99
+  year: 1

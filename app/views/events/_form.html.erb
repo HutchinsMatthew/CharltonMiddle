@@ -14,10 +14,18 @@
   <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :startdate, style: "display: block" %>
+    <%= form.time_field :startdate %>
   </div> 
   <div>
+    <%= form.label :enddate, style: "display: block" %>
+    <%= form.time_field :enddate %>
+  </div>
+  <div>
     <%= form.label :club_id, style: "display: block" %>
-    <%= form.number_field :club_id %>
+    <%= form.select :club_id , options_for_select(@clubs.pluck(:title, :id))%>
   </div>
 
   <div>
