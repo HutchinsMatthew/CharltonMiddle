@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  get 'rooms/index'
   resources :events
   resources :clubs
+
+  resources :rooms do
+    resources :messages
+  end
 
   get 'site/index'
   get 'site/show_users'
