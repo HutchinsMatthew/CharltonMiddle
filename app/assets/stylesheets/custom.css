@@ -14,7 +14,8 @@ main {
   padding: 2rem;
   color: gray;
   justify-content: center;
-  box-shadow: 4px 5px 11px 10px lightgray;
+  box-shadow: 4px 5px 11px 10px lightgray; 
+  background-color: aqua;
 }
 h1 {
   text-align: center;
