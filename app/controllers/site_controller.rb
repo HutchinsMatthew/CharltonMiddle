@@ -7,5 +7,7 @@ class SiteController < ApplicationController
     puts "\n\n\n\n"
     puts @users.length
     puts "\n\n\n\n"
-  end
+  end 
+
+  
 end

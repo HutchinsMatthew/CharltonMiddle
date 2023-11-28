@@ -17,7 +17,7 @@
   </div> 
   <div>
     <%= form.label :club_id, style: "display: block" %>
-    <%= form.number_field :club_id %>
+    <%= form.select :club_id , options_for_select(@clubs.pluck(:title, :id))%>
   </div>
 
   <div>
