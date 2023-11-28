@@ -1,0 +1,21 @@
+<h1>Users</h1>
+
+<table class="table table-bordered">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">E-Mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for user in @users.length.times do %>
+      <tr>
+        <th scope="row"><%= user+1 %></th>
+        <td> <%=@users[user].name%></td>
+        <td> <%=@users[user].email%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
