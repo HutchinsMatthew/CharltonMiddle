@@ -1,5 +1,5 @@
 class Event < ApplicationRecord
 
-    belongs_to :clubs
+    belongs_to :club
 
 end
