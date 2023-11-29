@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_28_163429) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_28_191836) do
   create_table "clubs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,6 +28,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_28_163429) do
 
   create_table "students", force: :cascade do |t|
     t.string "name"
+    t.integer "grade"
+    t.decimal "gpa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,6 +43,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_28_163429) do
 
   create_table "teachers", force: :cascade do |t|
     t.string "name"
+    t.string "subject"
+    t.integer "avgTenure"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
