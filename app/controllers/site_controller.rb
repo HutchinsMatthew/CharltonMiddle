@@ -8,4 +8,12 @@ class SiteController < ApplicationController
     puts @users.length
     puts "\n\n\n\n"
   end
+
+  def one_to_many
+
+  end
+
+  def many_to_many
+
+  end
 end

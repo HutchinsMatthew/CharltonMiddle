@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'site/index'
   get 'site/show_users'
+  get 'site/one_to_many'
+  get 'site/many_to_many'
  
   devise_for :users, controllers: {
     sessions: 'users/sessions',
