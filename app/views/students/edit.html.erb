@@ -5,6 +5,6 @@
 <br>
 
 <div>
-  <%= link_to "Show this student", @student %> |
-  <%= link_to "Back to students", students_path %>
+  <%= button_to "Show this student", @student, method: :get, class: "btn btn-primary m-1" %> |
+  <%= button_to "Back to students", students_path, method: :get, class: "btn btn-primary m-1" %>
 </div>

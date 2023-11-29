@@ -6,10 +6,10 @@
   <% @teachers.each do |teacher| %>
     <%= render teacher %>
     <p>
-      <%= link_to "Show this teacher", teacher %>
+      <%= button_to "Show this teacher", teacher, method: :get, class: "btn btn-primary m-1" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New teacher", new_teacher_path %>
-<%= link_to "Assign students to teachers", add_students_to_teachers_teachers_path%>
+<%= button_to "New teacher", new_teacher_path, method: :get, class: "btn btn-primary m-1" %>
+<%= button_to "Assign students to teachers", add_students_to_teachers_teachers_path , method: :get, class: "btn btn-primary m-1"%>
