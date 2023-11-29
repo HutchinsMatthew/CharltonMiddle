@@ -34,7 +34,7 @@
         <% for teacher in @teachers.length.times do %>
           <tr>
             <th scope="row"><%= teacher+1 %></th>
-            <td> <%=@teachers[teacher].name%></td>
+            <td> <%=@teachers[teacher].id%></td>
           </tr>
         <% end %>
       </tbody>
@@ -47,7 +47,7 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Title</th>
+          <th scope="col">Name</th>
         </tr>
       </thead>
       <tbody>
