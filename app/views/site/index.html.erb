@@ -1,12 +1,42 @@
 <div class="container-fluid">
   <h1>Web Development - Rails</h1>
   <%= image_tag ("code-logo.png"), class:'mx-auto my-5 d-block' %>
-  <main>
-
-  </main> 
+  <h2 class="text-center">Hello, Charlton Middle School</h2> 
+  <div class="row bg-secondary border border-3 border-black">
+    <div class="col-4">
+      <%= image_tag ("rails.svg"), class:'mx-auto my-5 d-block img-fluid' %>
+    </div>
+    <div class="col-8 text-center my-auto">
+      <h2>Ruby on Rails - Text Text Text Text Text Text Text</h2>
+    </div>
+  </div>
+  <div class="row border border-3 border-black">
+    <div class="col-8 text-center my-auto">
+      <h2>Databases - Text Text Text Text Text Text Text</h2>
+    </div>
+    <div class="col-4">
+      <%= image_tag ("db-logo.png"), class:'mx-auto my-5 d-block img-fluid' %>
+    </div>
+  </div>
+  <div class="row border bg-secondary border-3 border-black">
+    <div class="col-4">
+      <%= image_tag ("CRUD.webp"), class:'mx-auto my-5 d-block img-fluid' %>
+    </div>
+    <div class="col-8 text-center my-auto">
+      <h2>CRUD - Text Text Text Text Text Text Text</h2>
+    </div>
+  </div>
+  <div class="row border border-3 border-black">
+    <p class="my-5"> This website is meant to showcase these topics in greater detail. Then we'll show you an app that uses
+    these concepts. You can see examples
+    <%= link_to 'here', 'https://weirdorconfusing.com/', target: "_blank" %> and 
+    <%= link_to 'here', 'https://maze.toys/mazes/mini/daily/', target: "_blank" %></p>
+  </div>
+  <p>
   <% if !user_signed_in? %>
   <div class="text-center">
     <%= link_to "Sign-Up", new_user_registration_path, class: 'btn btn-primary' %>
+  </div> 
   </div> 
   <% end %>
 </div>
