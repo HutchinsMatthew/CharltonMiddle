@@ -1,0 +1,63 @@
+<h1>Many-to-Many</h1>
+<div class="row">
+  <div class="col">
+    <h2 class="text-center">Students</h2>
+    <table class="table table-bordered table-striped">
+      <caption>List of students</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for student in @students.length.times do %>
+          <tr>
+            <th scope="row"><%= student+1 %></th>
+            <td> <%=@students[student].name%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <h2 class="text-center">Join Table</h2>
+    <table class="table table-bordered table-striped">
+      <caption>Join table</caption>
+      <thead>
+        <tr>
+          <th scope="col">Student Id</th>
+          <th scope="col">Teacher Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for teacher in @teachers.length.times do %>
+          <tr>
+            <th scope="row"><%= teacher+1 %></th>
+            <td> <%=@teachers[teacher].name%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <h2 class="text-center">Teachers</h2>
+    <table class="table table-bordered table-striped">
+      <caption>List of teachers</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for teacher in @teachers.length.times do %>
+          <tr>
+            <th scope="row"><%= teacher+1 %></th>
+            <td> <%=@teachers[teacher].name%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

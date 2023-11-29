@@ -4,10 +4,15 @@ class SiteController < ApplicationController
 
   def show_users
     @users = User.all
-    puts "\n\n\n\n"
-    puts @users.length
-    puts "\n\n\n\n"
-  end 
+  end
 
-  
+  def one_to_many
+    @clubs = Club.all
+    @events = Event.all
+  end
+
+  def many_to_many
+    @students = Student.all
+    @teachers = Teacher.all
+  end
 end
