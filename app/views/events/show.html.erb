@@ -4,8 +4,8 @@
 
 
 <div>
-  <%= button_to "Edit this event", edit_event_path(@event), method: :get, class: "btn btn-primary m-1" %> |
-  <%= button_to "Back to events", events_path, method: :get, class: "btn btn-primary m-1" %>
+  <%= button_to "Edit this event", edit_event_path(@event), method: :get, class: "btn btn-warning m-1" %> |
+  <%= button_to "Back to events", events_path, method: :get, class: "btn btn-secondary m-1" %>
 
-  <%= button_to "Destroy this event", @event, method: :delete, class: "btn btn-primary m-1" %>
+  <%= button_to "Destroy this event", @event, method: :delete, class: "btn btn-dark m-1" %>
 </div>
