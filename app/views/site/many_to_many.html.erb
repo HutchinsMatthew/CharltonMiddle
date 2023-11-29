@@ -31,11 +31,13 @@
         </tr>
       </thead>
       <tbody>
-        <% for teacher in @teachers.length.times do %>
+        <% @students.each do |s| %>
+          <% s.teachers.each do |t| %>
           <tr>
-            <th scope="row"><%= teacher+1 %></th>
-            <td> <%=@teachers[teacher].id%></td>
+            <td><%= t.id %></td>
+            <td><%= s.id %></td>
           </tr>
+          <% end %>
         <% end %>
       </tbody>
     </table>
