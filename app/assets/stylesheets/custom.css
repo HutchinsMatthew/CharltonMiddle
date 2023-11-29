@@ -15,7 +15,6 @@ main {
   color: gray;
   justify-content: center;
   box-shadow: 4px 5px 11px 10px lightgray; 
-  background-color: aqua;
 }
 h1 {
   text-align: center;
@@ -33,4 +32,9 @@ h1 {
 } 
 body{ 
     background-color: #eae0c8;
+}
+p{
+  font-size: 18px;   
+  font-weight: bold;   
+  text-align: center;
 }

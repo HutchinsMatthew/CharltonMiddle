@@ -2,11 +2,11 @@
   <p>
     <strong>Name:</strong>
     <%= teacher.name %>
-  </p>
+  </p> 
+  <strong>Students:</strong>
   <% teacher.students.each do |s| %>
     <p>
-      <strong>Student:</strong>
-      <%= s.name %>
+      <%= link_to s.name, student_path(id:s.id) %>
     </p>
   <%end%>
 
