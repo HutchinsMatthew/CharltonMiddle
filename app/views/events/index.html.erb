@@ -6,9 +6,9 @@
   <% @events.each do |event| %>
     <%= render event %>
     <p>
-      <%= link_to "Show this event", event %>
+      <%= button_to "Show this event", event, method: :get, class: "btn btn-primary m-1" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New event", new_event_path %>
+<%= button_to "New event", new_event_path, method: :get, class: "btn btn-primary m-1" %>
