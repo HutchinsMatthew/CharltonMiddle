@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Teachers</h1>
+<div class="text-center">
+<h1><u>Teachers</u></h1>
 
 <div id="teachers">
   <% @teachers.each do |teacher| %>
@@ -12,4 +12,5 @@
 </div>
 
 <%= button_to "New teacher", new_teacher_path, method: :get, class: "btn btn-success m-1" %>
-<%= button_to "Assign students to teachers", add_students_to_teachers_teachers_path , method: :get, class: "btn btn-info m-1"%>
+<%= button_to "Assign students to teachers", add_students_to_teachers_teachers_path , method: :get, class: "btn btn-info m-1"%> 
+</div>

@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Students</h1>
-
+<h1><u>Students</u></h1>
+<div class="text-center">
 <div id="students">
   <% @students.each do |student| %>
     <%= render student %>
@@ -12,3 +12,4 @@
 </div>
 
 <%= button_to "New student", new_student_path, method: :get, class: "btn btn-success m-1" %>
+</div>
