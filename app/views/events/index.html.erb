@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Events</h1>
-
+<h1><u>Events</u></h1>
+<div class="text-center">
 <div id="events">
   <% @events.each do |event| %>
     <%= render event %>
@@ -12,3 +12,4 @@
 </div>
 
 <%= button_to "New event", new_event_path, method: :get, class: "btn btn-success m-1" %>
+</div>
