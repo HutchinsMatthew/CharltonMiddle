@@ -1,55 +1,12 @@
 <div class="container-fluid">
   <h1>Web Development - Rails</h1>
+  <%= image_tag ("code-logo.png"), class:'mx-auto my-5 d-block' %>
   <main>
-  
-
-
- <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active text-center">
-      <h1>Welcome to the world of Web development</h1>
-    </div>
-    <div class="carousel-item text-center">
-      <h2>Today, we're diving into the magic of creating your own digital universe. </h2>
-    </div>
-    <div class="carousel-item text-center">
-      <h2>Imagine crafting interactive blogs, dynamic photo galleries, or even 
-          personalized to-do lists! In this Rails app, we'll explore the building
-          blocks like models and associations that make it all possible. </h2>
-    </div>  
-
-    <div class="carousel-item text-center">
-      <h2>Check out some examples </h2>  
-      <div class="row">
-      <%= link_to 'here', 'https://weirdorconfusing.com/', class: "col-lg-6" %> 
-      <%= link_to 'here', 'https://maze.toys/mazes/mini/daily/', class: "col-lg-6" %> 
-      </div>
-    </div> 
-    
-  </div> 
-  
-
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
 
   </main> 
   <% if !user_signed_in? %>
   <div class="text-center">
-    <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary' %>
+    <%= link_to "Sign-Up", new_user_registration_path, class: 'btn btn-primary' %>
   </div> 
   <% end %>
 </div>
