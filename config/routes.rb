@@ -1,16 +1,26 @@
 Rails.application.routes.draw do
+
+  get 'rooms/index'
+
   resources :teachers do
     collection do
         get 'add_students_to_teachers'
     end
   end
   resources :students
+
   resources :events
   resources :clubs
   
 
+  resources :rooms do
+    resources :messages
+  end
+
   get 'site/index'
   get 'site/show_users'
+  get 'site/one_to_many'
+  get 'site/many_to_many'
  
   devise_for :users, controllers: {
     sessions: 'users/sessions',
