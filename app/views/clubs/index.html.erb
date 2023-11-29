@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Clubs</h1>
-
+<h1><u>Clubs</u></h1>
+<div class="text-center">
 <div id="clubs">
   <% @clubs.each do |club| %>
     <%= render club %>
@@ -12,3 +12,4 @@
 </div>
 
 <%= button_to "New club", new_club_path, method: :get, class: "btn btn-success m-1" %>
+</div>
