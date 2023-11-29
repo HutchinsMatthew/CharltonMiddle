@@ -14,5 +14,6 @@ class SiteController < ApplicationController
   def many_to_many
     @students = Student.all
     @teachers = Teacher.all
-  end
+  end 
+
 end
