@@ -34,8 +34,8 @@
         <% @students.each do |s| %>
           <% s.teachers.each do |t| %>
           <tr>
-            <td><%= t.id %></td>
             <td><%= s.id %></td>
+            <td><%= t.id %></td>
           </tr>
           <% end %>
         <% end %>
