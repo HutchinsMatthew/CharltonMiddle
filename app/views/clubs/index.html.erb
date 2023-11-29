@@ -6,9 +6,9 @@
   <% @clubs.each do |club| %>
     <%= render club %>
     <p>
-      <%= link_to "Show this club", club %>
+      <%= button_to "Show this club", club, method: :get, class: "btn btn-primary m-1" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New club", new_club_path %>
+<%= button_to "New club", new_club_path, method: :get, class: "btn btn-primary m-1" %>
