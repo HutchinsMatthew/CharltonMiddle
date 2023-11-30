@@ -1,1 +1,1 @@
-<div> <%= link_to room.name, room %> </div>
+<div class="d-flex"><%= link_to room.name, room, class:'btn btn-primary my-1' %><%= button_to 'x', room_path(room), method: :delete, class:'btn' %></div>

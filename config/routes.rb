@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :events
   resources :clubs
   
+  
 
   resources :rooms do
     resources :messages
